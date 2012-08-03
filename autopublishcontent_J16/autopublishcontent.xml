@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="system">
+	<name>System - Auto publish content</name>
+	<author>IamBoredSoIBlog.eu</author>
+	<creationDate>Juni 2011</creationDate>
+	<copyright>Copyright (C) 2010 - 2011 IamBoredSoIBlog.eu All rights reserved.</copyright>
+	<license>Please see our site for the license</license>
+	<authorEmail>info@IamBoredSoIBlog.eu</authorEmail>	
+	<authorUrl>www.IamBoredSoIBlog.eu</authorUrl>
+	<version>2.1</version>
+	<description>An Autopublish Autofrontend tool for content</description>
+	<files>
+		<filename plugin="autopublishcontent">autopublishcontent.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">	
+			<field name="categories" type="category" default="" label="Select a category" description="Choose one or multiple categories"  />
+			<field
+name="categories"
+type="category"
+label="Choose a category..."
+extension="com_content"
+multiple="multiple"
+description="Choose one or multiple categories"
+/>
+			<field name="@spacer" type="spacer" default="" label="" description="" />
+			<field name="pubfron" type="list" default="2" label="Publish Frontpage" description="Auto-Publish or Auto-frontpage">
+				<option value="0">Auto-Publish</option>
+				<option value="1">Auto-Frontpage</option>
+				<option value="2">Both</option>
+			</field>			
+			</fieldset>
+		</fields>
+	</config>
+</extension>

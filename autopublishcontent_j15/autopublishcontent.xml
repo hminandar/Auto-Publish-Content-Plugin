@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - Auto publish content</name>
+	<author>Van der Sluijs . NL</author>
+	<creationDate>Januari 2011</creationDate>
+	<copyright>Copyright (C) 2009 - 2011 vandersluijs.nl All rights reserved.</copyright>
+	<license>Please see our site for the license</license>
+	<authorEmail>info@vandersluijs.nl</authorEmail>	
+	<authorUrl>www.vandersluijs.nl</authorUrl>
+	<version>1.6</version>
+	<description>An Autopublish tool for content</description>
+	<files>
+		<filename plugin="autopublishcontent">autopublishcontent.php</filename>
+	</files>
+	<params>
+			<param name="sections" type="section" default="" label="Select a section" description="Choose the section" />
+			<param name="categories" type="category" default="" label="Select a category" description="Choose the category"  />
+	</params>
+</install>
